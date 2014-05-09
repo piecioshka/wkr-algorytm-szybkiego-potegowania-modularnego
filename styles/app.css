@@ -1,0 +1,7 @@
+.inputs-block { text-align: center; }
+.inputs-block .input { width: 70px; color: #010101; text-align: center; border-radius: 3px; border: none; }
+#second { vertical-align: super; }
+.result-block { border-top: 1px solid #cbcbcb; }
+#result th, #result td { text-align: center; }
+.legend-block .legend-item { display: inline-block; margin: 0 15px 5px 0; }
+article section { padding: 15px; margin: 0; }

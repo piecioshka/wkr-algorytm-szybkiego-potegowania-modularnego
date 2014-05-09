@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Algorytm Szybkiego Potęgowania Modularnego - Wstęp do kryptologii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app.css"/>
+</head>
+<body>
+    <article class="center-block">
+        <section class="inputs-block bg-primary">
+            <input id="first" class="input" type="text" pattern="\d*" />
+            <input id="second" class="input" type="text" pattern="\d*" /> mod
+            <input id="third" class="input" type="text" pattern="\d*" />
+        </section>
+        <section class="submit-block bg-info">
+            <button id="submit" class="btn btn-danger btn-lg btn-block" type="button">Calculate</button>
+        </section>
+        <section id="result" class="result-block bg-success hidden"></section>
+        <section class="legend-block">
+            <span class="legend-item">
+                <a href="#" class="btn btn-danger btn-lg disabled" role="button"></a> Result
+            </span>
+        </section>
+    </article>
+
+    <script src="//underscorejs.org/underscore-min.js"></script>
+    <script src="//zeptojs.com/zepto.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script>
+        (function () {
+            return new App({
+                first: $('#first'),
+                second: $('#second'),
+                third: $('#third'),
+                submit: $('#submit'),
+                result: $('#result')
+            });
+        }());
+    </script>
+</body>
+</html>
