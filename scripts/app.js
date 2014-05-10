@@ -51,16 +51,34 @@
 
         _checkParams: function () {
             var s = this.settings;
+
             var a = s.first.val();
             var b = s.second.val();
             var c = s.third.val();
 
-            if (!a.length || !b.length || !c.length) {
-                alert('Please fill mandatory params');
-                return false;
+            var errors = [];
+            var status;
+
+            if (!(/^\d+$/).test(a)) {
+                errors.push('Incorrect value of "first" param');
             }
 
-            return true;
+            if (!(/^\d+$/).test(b)) {
+                errors.push('Incorrect value of "second" param');
+            }
+
+            if (!(/^\d+$/).test(c)) {
+                errors.push('Incorrect value of "third" param');
+            }
+
+            if (_.size(errors)) {
+                alert(_.first(errors));
+            }
+
+            // update status by error list
+            status = !_.size(errors);
+
+            return status;
         },
 
         _toBits: function (number) {
