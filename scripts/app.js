@@ -60,15 +60,15 @@
             var status;
 
             if (!(/^\d+$/).test(a)) {
-                errors.push('Incorrect value of "first" param');
+                errors.push('Niepoprawna wartość pierwszego parametru');
             }
 
             if (!(/^\d+$/).test(b)) {
-                errors.push('Incorrect value of "second" param');
+                errors.push('Niepoprawna wartość drugiego parametru');
             }
 
             if (!(/^\d+$/).test(c)) {
-                errors.push('Incorrect value of "third" param');
+                errors.push('Niepoprawna wartość trzeciego parametru');
             }
 
             if (_.size(errors)) {
