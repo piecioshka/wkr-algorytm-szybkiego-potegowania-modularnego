@@ -10,15 +10,22 @@
 </head>
 <body>
     <article class="center-block">
+        <header class="bg-warning">
+            <h4 class="text-center">Algorytm Szybkiego Potęgowania Modularnego</h4>
+        </header>
+
         <section class="inputs-block bg-primary">
-            <input id="first" class="input" type="text" pattern="\d*" />
-            <input id="second" class="input" type="text" pattern="\d*" /> mod
-            <input id="third" class="input" type="text" pattern="\d*" />
+            <input id="first" class="input" type="text" pattern="\d*" placeholder="First" />
+            <input id="second" class="input" type="text" pattern="\d*" placeholder="Second" /> mod
+            <input id="third" class="input" type="text" pattern="\d*" placeholder="Third" />
         </section>
+
         <section class="submit-block bg-info">
             <button id="submit" class="btn btn-danger btn-lg btn-block" type="button">Calculate</button>
         </section>
+
         <section id="result" class="result-block bg-success hidden"></section>
+
         <section class="legend-block">
             <span class="legend-item">
                 <a href="#" class="btn btn-danger btn-lg disabled" role="button"></a> Result
