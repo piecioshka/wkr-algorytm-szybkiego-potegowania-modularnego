@@ -1,5 +1,5 @@
 header { padding: 15px; width: 100%; }
-header h4 { margin: 0; }
+header > h4 { margin: 0; }
 .inputs-block { text-align: center; }
 .inputs-block .input { width: 70px; color: #010101; text-align: center; border-radius: 3px; border: none; }
 #second { vertical-align: super; }
