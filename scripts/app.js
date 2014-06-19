@@ -17,15 +17,15 @@
         initialize: function () {
             var s = this.settings;
 
-            _.bindAll(this, '_keydownHandler', '_submitHandler');
+            _.bindAll(this, '_keyDownHandler', '_submitHandler');
 
             // after click submit do calculation
             s.submit.on('click', this._submitHandler);
 
             // print result on any input have been modify
-            s.first.on('keydown', this._keydownHandler);
-            s.second.on('keydown', this._keydownHandler);
-            s.third.on('keydown', this._keydownHandler);
+            s.first.on('keydown', this._keyDownHandler);
+            s.second.on('keydown', this._keyDownHandler);
+            s.third.on('keydown', this._keyDownHandler);
 
             // set focus on first input
             s.first.focus();
@@ -39,7 +39,7 @@
             return e.ctrlKey || e.shiftKey || e.metaKey || e.altKey;
         },
 
-        _keydownHandler: function (e) {
+        _keyDownHandler: function (e) {
             if (this._isShortcut(e)) {
                 return;
             }
