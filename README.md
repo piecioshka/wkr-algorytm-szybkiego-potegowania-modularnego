@@ -2,7 +2,7 @@
 
 Mini aplikacja pozwalająca obliczyć liczbę podniesioną do potęgi w arytmetyce modularnej.
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/wkr-algorytm-szybkiego-potegowania-modularnego/>
 
