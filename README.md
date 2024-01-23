@@ -8,4 +8,4 @@ Mini aplikacja pozwalająca obliczyć liczbę podniesioną do potęgi w arytmety
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org/) @ 2014
+[The MIT License](https://piecioshka.mit-license.org/) @ 2014
